@@ -13,6 +13,9 @@
  i started by scanning Zetech.ac.ke using OWASP ZAP to find potential vulnerabilities.
  -ZAP flagged the server type and version
  -This gave me a lead to check if the server has known vulnerabilities.
+![zaproxy scan results](screenshots/zaproxy flagging and showing te server of the site.jpeg)
+[Zap full scan ](screenshots/zaproxy 3 full.jpeg)
+ 
  
  ##CVE RESEARCH 
  I then checked for CVE advisories
