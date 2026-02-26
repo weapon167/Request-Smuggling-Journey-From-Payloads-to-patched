@@ -53,8 +53,8 @@ In my previous report, I noted that the site appeared to be patched. I was wrong
 
  Phase 1: The EOL Red Flag
 The journey began with simple recon. nmap scans and HTTP headers revealed the server is running Apache 2.4.52/2.4.58.
-### Nmap Scan Evidence
-![Nmap Scan](evidence/nmap-scan-2026-02-22-02-18-00.jpeg)
+### Nmap Scan Evidence:
+![Nmap Scan](nmap-scan-2026-02-22-02-18-08.jpeg)
 
  Insight: These versions are widely known to be End-of-Life (EOL) or lacking critical security backports in certain configurations.
 
