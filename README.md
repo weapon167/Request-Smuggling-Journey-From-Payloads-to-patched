@@ -53,6 +53,8 @@ In my previous report, I noted that the site appeared to be patched. I was wrong
 
  Phase 1: The EOL Red Flag
 The journey began with simple recon. nmap scans and HTTP headers revealed the server is running Apache 2.4.52/2.4.58.
+### Nmap Scan Evidence
+![Nmap Scan](nmap-scan-2026-02-22-at-02.18.08.jpeg)
 
  Insight: These versions are widely known to be End-of-Life (EOL) or lacking critical security backports in certain configurations.
 
@@ -64,6 +66,10 @@ To prove the vulnerability wasn't fixed, I moved from simple requests to Timing 
 I achieved the the 303 Redirect.
 
 By sending a single, specifically crafted chunked POST request, I forced the back-end to process a second hidden request. The server responded with a 303 See Other redirecting to the login page.
+
+### Payload with Session Cookie
+![Payload with Session Cookie](payload-with-session-cookie.jpeg)
+
 
 - In a standard HTTP environment, one request equals one response. Forcing the server to respond to a "smuggled" request proves the front-end and back-end are desynchronized.
 
