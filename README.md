@@ -68,8 +68,7 @@ I achieved the the 303 Redirect.
 By sending a single, specifically crafted chunked POST request, I forced the back-end to process a second hidden request. The server responded with a 303 See Other redirecting to the login page.
 
 ### Payload with Session Cookie
-![Payload with Session Cookie](payload-session-cookie.jpeg)
-
+![Payload with Session cookie](images/payload-session-cookie.jpeg)
 
 - In a standard HTTP environment, one request equals one response. Forcing the server to respond to a "smuggled" request proves the front-end and back-end are desynchronized.
 
